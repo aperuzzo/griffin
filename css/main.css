@@ -1,0 +1,730 @@
+/*all thumbnail images should be sized at 770 x 627 pixels*/
+
+@font-face {
+    font-family: 'socicon';
+    src: url('../fonts/social/socicon.eot');
+    src: url('../fonts/social/socicon.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/social/socicon.woff') format('woff'),
+         url('../fonts/social/socicon.woff2') format('woff2'),
+         url('../fonts/social/socicon.ttf') format('truetype'),
+         url('../fonts/social/socicon.svg#sociconregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    text-transform: initial;
+
+    /* icon display chart: http://www.socicon.com/chart.php */
+}
+
+
+/* ==========================================================================
+   universal styles
+   ========================================================================== */
+p, li {
+	font-family: 'Raleway', sans-serif;
+	line-height: 1.3em;
+}
+
+p {
+	font-size: 1em;
+}
+
+h1, h2, h3 {
+	font-family: 'Fjalla One', sans-serif;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 2.5em;
+	margin-bottom: 0px;
+	margin-top: 0;
+}
+
+h2, h3 {
+	margin-top: 0;
+	margin-bottom: 8px;
+}
+
+h4 {
+	/*used for dates on posts where date is displayed*/
+	font-weight: normal;
+	font-style: italic;
+	font-family: 'Raleway';
+	margin: 0;
+}
+section {
+	padding: 20px 0;
+}
+
+.pageIntro {
+	margin-bottom: 15px;
+	margin-top: 25px;
+}
+
+.pageIntro p {
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+
+
+/* ==========================================================================
+   main nav
+   ========================================================================== */
+
+nav#topNav {
+	position: fixed;
+	top: 0;
+	z-index: 1;
+}
+
+.slideTopNav {
+	width: 135px
+}
+
+nav header {
+	background-color: #000;
+	padding: 0 3px;
+}
+
+.hideSmall {
+	display: none;
+}
+
+
+.menuBtn {
+	width: 30px;
+	color: #666;
+	background-color: #000;
+    cursor: pointer;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -3px;
+	font-size: 1.4em;
+	padding: 0 5px;
+	position: relative;
+	-webkit-transition: transform 1s; /* Safari */
+    transition: transform 1s;
+
+}
+
+.menuBtn:hover {
+	color: #b18442;
+}
+
+.rotate {
+	-ms-transform: rotateY(180deg); /* IE 9 */
+    -webkit-transform: rotateY(180deg); /* Chrome, Safari, Opera */
+    transform: rotateY(180deg);
+    
+}
+
+#navMenu {
+	width: 136px;
+	padding-left: 0px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	margin-top: 0;
+	margin-bottom: 0;
+	position: fixed;
+	left: 0px;
+	background-color: #000;
+}
+
+
+/*applied on menu scroll on large screen*/
+.shrinkLogo {
+	width: 50px;
+	height: 40px;
+	margin: auto;
+	display: block;
+
+}
+
+img.mainLogo {
+	width: 130px;
+	height: 103px;
+	-webkit-transition: width .3s, height .3s; /* Safari */
+    transition: width .3s, height .3s;
+}
+
+/*navigation menu items*/
+
+nav li {
+	list-style-type: none;
+	text-transform: uppercase;
+	line-height: 2.5em;
+	text-align: center;
+}
+
+nav#topNav a {
+	color: #666;
+}
+
+body a:hover, ul#navMenu a:hover {
+	color: #b28442;
+	
+}
+
+nav a:focus {
+	color: #b28442;
+	text-decoration: none;
+}
+
+nav#topNav h2 {
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0px;
+	color: #fff;
+}
+
+/* ==========================================================================
+   header
+   ========================================================================== */
+
+#galleryIntro {
+	position: relative;
+	background: url('../img/frontGallery.jpg') no-repeat center;
+	background-size: cover;
+	padding: 30% 0 0 0;
+	
+}
+
+#gradient {
+	display: none;
+}
+
+#mainTitle {
+	text-align: center;
+	background: #b28442 url('../img/wave.png') repeat repeat;
+	padding: 30px 0;
+}
+
+section#mainTitle h1{
+	font-family: 'Crimson Text', serif;
+	font-size: 3.8em;
+	line-height: .8em;
+	color: #fff;
+	margin-bottom: 5px;
+}
+
+#mainTitle h2 {
+	line-height: 1em;
+	
+}
+
+#mainTitle h1, h2 {
+	margin: 0;
+}
+
+/* ==========================================================================
+   home page content
+   ========================================================================== */
+
+.thumbnail {
+	border: none;
+	box-shadow: none;
+}
+
+.homeThumb img {
+	display: block;
+	margin: auto;
+	width: 100%;
+}
+
+.homeThumb {
+	position: relative;
+	width: 90%;
+	border: 3px solid #000;
+	border-radius: 10px;
+	overflow: hidden;
+	margin: 2% auto;
+	-webkit-transition: all .3s; /* Safari */
+    transition: all .3s;
+
+}
+
+.homeThumb:hover, figure.artistThumb:hover, .artistGallery img:hover {
+	transform: scale(1.05);
+}
+
+.captionH2 {
+	position: relative;
+	background-color: #000;
+	padding: 10px 10px 15px 10px;
+}
+
+.homeThumb h2 {
+	margin: 0;
+	color: #fff;
+	text-align: center;
+	font-size: 19px;
+	-webkit-transition: all .3s; /* Safari */
+    transition: all .3s;
+}
+
+.homeThumb:hover h2 {
+	color: #b18442;
+}
+
+.captionP {
+	position: absolute;
+	bottom: 0;
+	height: 25%;
+	padding: 5px;
+	background-color: hsla(36, 46%, 48%, 0.71);
+	width: 100%;
+	margin-top: auto;
+	margin-bottom: auto;
+	
+}
+
+.captionP p {
+	font-weight: 300;
+	color: #fff;
+	margin: 0;
+	text-align: center;
+
+}
+
+p span.griffinText {
+	
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 15px;
+}
+
+#galleryCallOut {
+	position: relative;
+	padding: 35px;
+	background: #000 url('../img/angleWave.png') repeat repeat;
+}
+
+#galleryCallOut p {
+	text-align: center;
+	color: #fff;
+	
+}
+
+#galleryCallOutInner {
+	border: 2px dotted #fff;
+	padding: 28px;
+}
+
+#griffIconWhite {
+	display: block;
+	margin: auto;
+	position: absolute;
+	top: 3%;
+	left: 47%;
+}
+
+/* ==========================================================================
+   artists page content
+   ========================================================================== */
+
+figure.artistThumb {
+   	-webkit-transition: all .3s; /* Safari */
+    transition: all .3s;
+}
+
+figure.artistThumb h2 {
+	-webkit-transition: all .3s; /* Safari */
+    transition: all .3s;
+}
+
+figure.artistThumb:hover h2 {
+	color: #000;
+}
+
+.artistThumb figcaption {
+	background-color: #b28442;
+	color: #fff;
+	margin-bottom: 25px;
+}
+
+.artistThumb figcaption h2 {
+	font-family: 'Raleway';
+	text-align: center;
+	font-size: 1.2em;
+	padding: 5px;
+}
+
+/* ==========================================================================
+   artists gallery page content
+   ========================================================================== */
+ .artistGallery {
+ 	margin-bottom: 15px;
+ }
+
+ .artistGallery img {
+ 	-webkit-transition: all .3s; /* Safari */
+    transition: all .3s;
+ }
+
+ .pageIntro nav span {
+ 	color: #b28442;
+ }
+
+ .artwork figcaption {
+ 	text-align: center;
+ 	text-transform: uppercase;
+ 	font-family: 'Raleway';
+ 	font-size: 1.1em;
+ }
+
+ .artwork img {
+ 	width: 100%;
+ }
+
+ .artwork p {
+ 	text-transform: uppercase;
+ 	font-size: 1.2em;
+ 	text-align: center;
+ }
+
+/* ==========================================================================
+   services page content
+   ========================================================================== */
+#servicesCopy p span {
+	font-size: 1.3em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#servicesCopy p {
+	text-align: center;
+}
+
+#servicesCopy ul {
+	margin-top: 40px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 285px;
+	
+}
+
+#servicesCopy li {
+	text-transform: uppercase;
+	font-size: 1.3em;
+
+}
+
+#servicesCopy a {
+	text-transform: uppercase;
+	color: #00e5ff;
+}
+
+/* ==========================================================================
+   about page content
+   ========================================================================== */
+
+#aboutCopy, #servicesCopy {
+	padding: 30px 25px 50px 25px;
+}
+
+#aboutImg img, #servicesImg img {
+	width: 100%;
+}
+
+blockquote {
+	text-align: center;
+	font-family: 'Raleway';
+	font-size: 1.5em;
+	font-style: italic;
+	padding: 0 10px;
+}
+
+blockquote span {
+	font-style: normal;
+	font-size: .7em;
+	display: block;
+}
+
+.staff img {
+	float: right;
+	padding: 5px;
+}
+
+/* ==========================================================================
+   events page content
+   ========================================================================== */
+
+   .brown {
+   	background: #b28442 url('../img/wave.png') repeat repeat;
+   	color: #fff;
+   	margin-bottom: 25px;
+   }
+
+   .no-padding {
+   	/*removes default padding on col classes*/
+   	padding: 0;
+   }
+
+   .eventsText {
+   	padding: 10px;
+   }
+
+   p.bold {
+   	text-transform: uppercase;
+   	font-weight: bold;
+   }
+
+   #bottomNav {
+   	margin-bottom: 25px;
+   }
+
+   #next {
+   	float: right;
+   }
+
+/* ==========================================================================
+   footer content
+   ========================================================================== */
+#galleryAddress {
+	background-color: #ebe0cc;
+	position: relative;
+}
+
+#galleryAddress, #contact, #follow {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	height: 100%;
+}
+
+#tab {
+	width: 80px;
+	height: 20px;
+	background-color: #ebe0cc;
+	position: absolute;
+	top: -15px;
+	left: 20px;
+	border: 1px solid #ebe0cc;
+	border-radius: 2px;
+}
+
+#galleryAddressInner {
+	width: 100%;
+	margin: 0 auto 29px auto;
+	color: #b18442;
+	text-transform: uppercase;
+	display: block;
+	text-align: center;
+}
+
+#galleryAddressInner img {
+	display: block;
+	margin: auto;
+
+}
+
+#galleryAddressInner p {
+	margin-top: 0;
+}
+
+/*form*/
+
+#contact, #follow, .form-control {
+	background-color: #b18442;
+	color: #fff;
+}
+
+.form-control {
+	border: 2px solid #fff;
+}
+
+::-webkit-input-placeholder {
+   color: #fff !important;
+   font-family: 'Raleway';
+   text-transform: uppercase;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #fff !important;
+   font-family: 'Raleway';
+   text-transform: uppercase; 
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #fff !important;
+   font-family: 'Raleway';
+   text-transform: uppercase; 
+}
+
+:-ms-input-placeholder {  
+   color: #fff !important;
+   font-family: 'Raleway';
+   text-transform: uppercase;
+}
+
+.antispam {
+	display: none;
+}
+
+.btn {
+	background-color: #b18442;
+	color: #fff;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	font-family: 'Raleway';
+	text-transform: uppercase;
+}
+
+.btn:hover {
+	background-color: #fff;
+	color: #b18442;
+}
+
+/*follow*/
+
+p.social {
+	font-family: 'socicon';
+	border: 3px solid #fff;
+	border-radius: 10px;
+	font-size: 50px;
+	display: inline-block;
+	margin: 5px 5px 0 0;
+	padding: 10px 5px;
+	background-color: #fff;
+	color: #b18442;
+}
+
+p.social:hover {
+	background-color: #b18442;
+	color: #fff;
+}
+
+/*map*/
+
+#map {
+	background-color: #000;
+	padding: 15px;
+	color: #fff;
+}
+
+.google-map {
+        position: relative;
+        padding-bottom: 50%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+    .google-map iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 15px;
+    }
+
+/* ==========================================================================
+   media queries
+   ========================================================================== */
+    @media screen and (min-width: 750px) {
+    	/*nav menu*/
+   		.hideSmall {
+   			display: block;
+   		}
+
+    }
+   @media screen and (min-width: 700px) {
+
+
+   		#menuBtn {
+   			text-align: center;
+   		}
+
+   		#gradient {
+   			display: block;
+			padding: 70px;
+			position: relative;
+		    background: -webkit-linear-gradient(transparent, #000); /* For Safari 5.1 to 6.0 */
+		    background: -o-linear-gradient(transparent, #000); /* For Opera 11.1 to 12.0 */
+		    background: -moz-linear-gradient(transparent, #000); /* For Firefox 3.6 to 15 */
+		    background: linear-gradient(transparent, #000); /* Standard syntax (must be last) */
+		}
+
+		#mainTitle h1{
+			font-size: 4em;
+		}
+
+		.homeThumb {
+			width: 90%;
+		}
+
+		#galleryCallOut p {
+			padding-left: 100px;
+			padding-right: 100px;
+		}
+
+		#galleryCallOut p, p span.griffinText {
+			font-size: 20px;
+		}
+
+		p.social {
+			
+			margin-bottom: 176px;
+		}
+
+   }
+
+   @media all and (min-width: 475px) and (max-width: 767px)  {
+   		.artistBio img {
+   			float: right;
+   			padding: 0 0 15px 20px;
+   		}
+   }
+
+   @media all and (min-width: 520px) and (max-width: 990px)  {
+
+   		.captionP p {
+   			font-size: 20px;
+   		}
+
+   		.captionP {
+   			height: 20%;
+   		}
+   }
+
+   @media screen and (min-width: 990px) {
+   		#aboutCopy  {
+   			padding-bottom: 181px;
+   		}
+
+   		#servicesCopy {
+   			padding-bottom: 237px;
+   		}
+   }
+
+    @media screen and (min-width: 1200px) {
+    	.brown p {
+    		font-size: 1.2em;
+    	}
+
+    	.brown h3 {
+    		font-size: 2em;
+    	}
+
+    	#aboutCopy {
+    		padding-bottom: 239px;
+    	}
+
+    	#servicesCopy {
+    		padding-top: 125px;
+    	}
+    }
+
+   @media screen and (min-width: 1500px) {
+
+   		.captionP p {
+   			font-size: 20px;
+   		}
+
+   		.captionP {
+   			height: 20%;
+   		}
+
+   }
+
+
