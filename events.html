@@ -10,13 +10,11 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+        <link rel="stylesheet" href="stylesheets/screen.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link href='https://fonts.googleapis.com/css?family=Norican|Fjalla+One|Raleway:400,300|Crimson+Text:600' rel='stylesheet' type='text/css'>
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="javascripts/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -26,7 +24,7 @@
       <nav id="topNav">
         <header>
           <img src="img/mainLogo.svg" alt="Main logo of Griffin Gallery" id="mainLogo" class="hideSmall">
-          <div class="menuBtn">
+          <div id="menuBtn">
             <i class="fa fa-bars"></i>
           </div>
         </header>
@@ -52,19 +50,20 @@
     <div class="container">
       <!-- contains only news/events articles -->
       <div class="row pageIntro">
-        <h1>news/events</h1>
-        <p>At Griffin Gallery we have new events every month. Please check here often to see what's new at Griffin Gallery!</p>
+        <div class="col-xs-12">
+          <h1>news/events</h1>
+          <p>At Griffin Gallery we have new events every month. Please check here often to see what's new at Griffin Gallery!</p>
+        </div>
       </div>
       <article class="row brown">
-        <div class="col-sm-7 col-md-4 no-padding">
+        <div class="col-sm-6 col-md-4 no-padding">
           <img src="img/foreman-thumb.jpg" class="img-responsive">
         </div>
-        <div class="col-sm-5 col-md-8 no-padding">
+        <div class="col-sm-6 col-md-8 no-padding">
           <div class="eventsText">
             <h4>July 7 2015</h4>
             <h3>Introducing Brent Foreman!</h3>
-            <p>We are proud to introduce a new artist for the gallery, Brent Foreman. Brent  was born and raised in Minneapolis, Minnesota. He attended Minnesota State University in Mankato where he completed his Bachelor’s  and Master’s degree in Fine Art.</p>
-  
+            <p>We are proud to introduce a new artist for the gallery, Brent Foreman.</p>
             <p>His recent work is reminiscent of such painters as Gottlieb, Motherwell and Rauschenberg. It is defined by large areas of whimsical color, unconventional shapes and a loose brush stroke. He has an innate ability to combine textures, colors and shape in each and every piece. </p>
   
             <button class="btn col-xs-offset-5 col-sm-offset-9 col-md-offset-10">more</button>
@@ -72,10 +71,10 @@
         </div>
       </article>
       <article class="row brown">
-        <div class="col-sm-7 col-md-4 no-padding">
+        <div class="col-sm-6 col-md-4 no-padding">
           <img src="img/hearts-thumb.jpg" class="img-responsive">
         </div>
-        <div class="col-sm-5 col-md-8 no-padding">
+        <div class="col-sm-6 col-md-8 no-padding">
           <div class="eventsText">
             <h4>July 7 2015</h4>
             <h3>sweet art sale</h3>
@@ -88,10 +87,10 @@
         </div>
       </article>
       <article class="row brown">
-        <div class="col-sm-7 col-md-4 no-padding">
+        <div class="col-sm-6 col-md-4 no-padding">
           <img src="img/gerber-thumb.jpg" class="img-responsive">
         </div>
-        <div class="col-sm-5 col-md-8 no-padding">
+        <div class="col-sm-6 col-md-8 no-padding">
           <div class="eventsText">
             <h4>July 7 2015</h4>
             <h3>john gerber opening</h3>
@@ -103,17 +102,19 @@
         </div>
       </article>
       <nav id="bottomNav"class="row">
-        <button id="previous" class="btn"><i class="fa fa-arrow-left"></i>
-Previous News</button>
-        <button id="next" class="btn">More News <i class="fa fa-arrow-right"></i>
-</button>
+        <button id="previous" class="btn">
+          <i class="fa fa-arrow-left"></i>Previous News
+        </button>
+        <button id="next" class="btn">
+          More News <i class="fa fa-arrow-right"></i>
+        </button>
       </nav>
     </div>
     <div class="container-fluid">
       <footer>
         <div class="row">
           <div class="col-sm-4 col-md-3" id="galleryAddress">
-            <div class="tab"></div>
+            <div id="tab"></div>
             <div id="galleryAddressInner">
               <h2>griffin gallery</h2>
               <p>5222 West 78th St<br>  
@@ -181,11 +182,11 @@ Previous News</button>
  
     </div> <!-- /container -->        
     
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script>window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
-    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="javascripts/vendor/bootstrap.min.js"></script>
 
-    <script src="js/main.js"></script>
+    <script src="javascripts/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
        

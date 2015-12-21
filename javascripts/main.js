@@ -1,6 +1,6 @@
 $("document").ready(function (){
 	$('#navMenu').css('left', '-136px');
-	$('.menuBtn').click(function (event){
+	$('#menuBtn').click(function (event){
 		event.preventDefault();
 		var $navMenu = $('#navMenu');
 		if($('i').hasClass('fa-bars')){
@@ -13,7 +13,7 @@ $("document").ready(function (){
 		} else {
 			$navMenu.animate({left: "-135px"}, 300);
 			if($('#mainLogo').hasClass('shrinkLogo')){
-				$('#topNav header').delay(200).animate({width: '100%'}, 800);
+				$('#topNav header').delay(200).animate({width: '100%'}, 300);
 			}
 		}
 		//toggle between open and close icon for menuBtn on click
