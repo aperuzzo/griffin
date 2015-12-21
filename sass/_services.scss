@@ -1,0 +1,33 @@
+/* ==========================================================================
+   services page content
+   ========================================================================== */
+#servicesCopy {
+	p {
+		text-align: center;
+
+		span {
+			font-size: 1.3em;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+	}
+
+	ul {
+		margin-top: 40px;
+		margin-right: auto;
+		margin-left: auto;
+		width: 285px;
+		
+	}
+
+	li {
+		text-transform: uppercase;
+		font-size: 1.2em;
+
+	}
+
+	a {
+		text-transform: uppercase;
+		color: $link-blue;
+	}
+}

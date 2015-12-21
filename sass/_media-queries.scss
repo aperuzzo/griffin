@@ -1,0 +1,113 @@
+/* ==========================================================================
+   media queries
+   ========================================================================== */
+    @media screen and (min-width: 750px) {
+    	/*nav menu*/
+   		.hideSmall {
+   			display: block;
+   		}
+
+    }
+   @media screen and (min-width: 700px) {
+
+   		#menuBtn {
+   			margin-left: auto;
+			margin-right: auto;
+   			margin-top: -10px;
+   		}
+
+   		#gradient {
+   			display: block;
+			padding: 70px;
+			position: relative;
+		    background: -webkit-linear-gradient(transparent, #000); /* For Safari 5.1 to 6.0 */
+		    background: -o-linear-gradient(transparent, #000); /* For Opera 11.1 to 12.0 */
+		    background: -moz-linear-gradient(transparent, #000); /* For Firefox 3.6 to 15 */
+		    background: linear-gradient(transparent, #000); /* Standard syntax (must be last) */
+		}
+
+		section#mainTitle {
+			padding: 26px 0;
+
+			h1 {
+				font-size: 4em;
+				// line-height: .8em;
+			}
+
+			h2 {
+				font-size: 1.2em;
+			}
+		}
+
+		.homeThumb {
+			width: 90%;
+		}
+
+		#galleryCallOut p {
+			padding-left: 100px;
+			padding-right: 100px;
+		}
+
+		#galleryCallOut p, p span.griffinText {
+			font-size: 20px;
+		}
+
+		p.social {
+			
+			margin-bottom: 176px;
+		}
+
+   }
+
+   @media all and (min-width: 520px) and (max-width: 990px)  {
+
+   		.captionP p {
+   			font-size: 20px;
+   		}
+
+   		.captionP {
+   			height: 20%;
+   		}
+   }
+
+   @media screen and (min-width: 990px) {
+   		#aboutCopy  {
+   			padding-bottom: 127px;
+   		}
+
+   		#servicesCopy {
+   			padding-bottom: 235px;
+   		}
+   }
+
+    @media screen and (min-width: 1200px) {
+    	.brown p {
+    		font-size: 1.2em;
+    	}
+
+    	.brown h3 {
+    		font-size: 2em;
+    	}
+
+    	#aboutCopy {
+    		padding-bottom: 173px;
+    	}
+
+    	#servicesCopy {
+    		padding-top: 125px;
+    	}
+    }
+
+   @media screen and (min-width: 1500px) {
+
+   		.captionP p {
+   			font-size: 20px;
+   		}
+
+   		.captionP {
+   			height: 20%;
+   		}
+
+   }
+
+

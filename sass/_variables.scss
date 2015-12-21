@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'socicon';
+    src: url('../fonts/social/socicon.eot');
+    src: url('../fonts/social/socicon.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/social/socicon.woff') format('woff'),
+         url('../fonts/social/socicon.woff2') format('woff2'),
+         url('../fonts/social/socicon.ttf') format('truetype'),
+         url('../fonts/social/socicon.svg#sociconregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    text-transform: initial;
+
+    /* icon display chart: http://www.socicon.com/chart.php */
+}
+
+$brand-orange: 		#b28442;
+$menu-grey:	   		#666;
+$link-blue:			#00e5ff;
+$manilla-yellow:	#ebe0cc;
+
+$font-headlines:	'Fjalla One', sans-serif;
+$font-paragraph:	'Raleway', sans-serif;
+$font-main-title:	'Crimson Text', serif;
+$font-social:		'socicon';

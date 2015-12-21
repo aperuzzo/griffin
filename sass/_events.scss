@@ -1,0 +1,31 @@
+/* ==========================================================================
+   events page content
+   ========================================================================== */
+
+   .brown {
+   	background: $brand-orange url('../img/wave.png') repeat repeat;
+   	color: #fff;
+   	margin-bottom: 25px;
+   }
+
+   .no-padding {
+   	/*removes default padding on col classes*/
+   	padding: 0;
+   }
+
+   .eventsText {
+   	padding: 10px;
+   }
+
+   p.bold {
+   	text-transform: uppercase;
+   	font-weight: bold;
+   }
+
+   #bottomNav {
+   	margin-bottom: 25px;
+   }
+
+   #next {
+   	float: right;
+   }

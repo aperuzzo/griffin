@@ -1,0 +1,104 @@
+/* ==========================================================================
+   home page content
+   ========================================================================== */
+/*all thumbnail images should be sized at 770 x 627 pixels*/
+
+.thumbnail {
+	border: none;
+	box-shadow: none;
+}
+
+.homeThumb img {
+	display: block;
+	margin: auto;
+	width: 100%;
+}
+
+.homeThumb {
+	position: relative;
+	width: 90%;
+	border: 3px solid #000;
+	border-radius: 10px;
+	overflow: hidden;
+	margin: 2% auto;
+    @include transition(all .3s);
+
+}
+
+.homeThumb:hover, figure.artistThumb:hover, .artistGallery img:hover {
+	@include transform(scale(1.03));
+}
+
+.captionH2 {
+	position: relative;
+	background-color: #000;
+	padding: 10px 10px 15px 10px;
+}
+
+.homeThumb h2 {
+	margin: 0;
+	color: #fff;
+	text-align: center;
+	font-size: 19px;
+    @include transition(all .3s);
+}
+
+.homeThumb:hover h2 {
+	color: $brand-orange;
+}
+
+.captionP {
+	position: absolute;
+	bottom: 0;
+	height: 25%;
+	padding: 5px;
+	background-color: hsla(36, 46%, 48%, 0.71);
+	width: 100%;
+	margin-top: auto;
+	margin-bottom: auto;
+	
+}
+
+.captionP p {
+	font-weight: 300;
+	color: #fff;
+	margin: 0;
+	text-align: center;
+
+}
+
+p span.griffinText {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 15px;
+}
+
+#galleryCallOut {
+	position: relative;
+	padding: 35px;
+	background: #000 url('../img/angleWave.png') repeat repeat;
+}
+
+#galleryCallOut p {
+	text-align: center;
+	color: #fff;
+	
+}
+
+#galleryCallOutInner {
+	border: 2px dotted #fff;
+	padding: 15px;
+}
+
+#innerP {
+	margin-top: 30px;
+}
+
+#griffIconWhite {
+	display: block;
+	position: absolute;
+	top: 3%;
+	left: 0;
+	right: 0;
+	margin: auto;
+}

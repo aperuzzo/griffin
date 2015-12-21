@@ -1,0 +1,78 @@
+/* ==========================================================================
+   artists page content
+   ========================================================================== */
+/*all thumbnail images should be sized at 770 x 627 pixels*/
+
+figure.artistThumb {
+    @include transition(all .3s);
+
+    h2 {
+		@include transition(all .3s);
+	    font-family: $font-paragraph;
+		text-align: center;
+		font-size: 1.2em;
+		padding: 5px;
+	}
+
+	figcaption {
+		background-color: $brand-orange;
+		color: #fff;
+		margin-bottom: 25px;
+	}
+}
+
+figure.artistThumb:hover h2 {
+	color: #000;
+}
+
+/* ==========================================================================
+   artists gallery page content
+   ========================================================================== */
+ /*all thumbnail images should be sized at 770 x 627 pixels*/
+
+ .nav-title {
+ 	font-family: $font-paragraph;
+ }
+
+ .artistBio {
+ 	margin-bottom: 20px;
+
+ 	img {
+	 	border: 3px solid #000;
+	 	margin-bottom: 10px;
+	 }
+ }
+
+ .artistGallery {
+ 	margin-bottom: 30px;
+
+ 	img {
+	    @include transition(all .3s);
+	 }
+ } 
+
+ .pageIntro nav span {
+ 	color: $brand-orange;
+ }
+
+ .artwork {
+ 	figcaption {
+	 	text-align: center;
+	 	text-transform: uppercase;
+	 	font-family: $font-paragraph;
+	 	font-size: 1.1em;
+	 	margin: 10px 0;
+	 	color: $brand-orange
+	 }
+
+	 img {
+	 	width: 100%;
+	 }
+
+	 p {
+	 	text-transform: uppercase;
+	 	font-size: 1.2em;
+	 	text-align: center;
+	 	margin-bottom: 20px;
+	 }
+ }

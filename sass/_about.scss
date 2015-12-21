@@ -1,0 +1,30 @@
+/* ==========================================================================
+   about page content
+   ========================================================================== */
+
+#aboutCopy, #servicesCopy {
+	padding: 30px 15px 50px 15px;
+}
+
+#aboutImg img, #servicesImg img {
+	width: 100%;
+}
+
+blockquote {
+	text-align: center;
+	font-family: $font-paragraph;
+	font-size: 1.5em;
+	font-style: italic;
+	padding: 10px;
+
+	span {
+		font-style: normal;
+		font-size: .7em;
+		display: block;
+	}
+}
+
+.staff img {
+	float: right;
+	padding: 5px;
+}
