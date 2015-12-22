@@ -30,14 +30,13 @@ nav#topNav {
 	padding: 5px;
 	position:relative;
     @include transition(transform 1s);
+    &:hover {
+		color: $brand-orange;
+	}
 
     i {
     	padding: 5px 0;
     }
-}
-
-#menuBtn:hover {
-	color: $brand-orange;
 }
 
 .rotate {
@@ -65,11 +64,10 @@ ul#navMenu {
 
 	a {
 		color: $menu-grey;
-	}
-
-	a:focus {
-		color: $brand-orange;
-		text-decoration: none;
+		&:focus {
+			color: $brand-orange;
+			text-decoration: none;
+		}
 	}
 }
 

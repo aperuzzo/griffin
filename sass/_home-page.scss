@@ -22,6 +22,9 @@
 	overflow: hidden;
 	margin: 2% auto;
     @include transition(all .3s);
+    &:hover h2 {
+		color: $brand-orange;
+	}
 
 }
 
@@ -41,10 +44,6 @@
 	text-align: center;
 	font-size: 19px;
     @include transition(all .3s);
-}
-
-.homeThumb:hover h2 {
-	color: $brand-orange;
 }
 
 .captionP {

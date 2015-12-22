@@ -5,6 +5,9 @@
 
 figure.artistThumb {
     @include transition(all .3s);
+    &:hover h2 {
+    		color: #000;
+    }
 
     h2 {
 		@include transition(all .3s);
@@ -12,6 +15,7 @@ figure.artistThumb {
 		text-align: center;
 		font-size: 1.2em;
 		padding: 5px;
+		
 	}
 
 	figcaption {
@@ -19,10 +23,6 @@ figure.artistThumb {
 		color: #fff;
 		margin-bottom: 25px;
 	}
-}
-
-figure.artistThumb:hover h2 {
-	color: #000;
 }
 
 /* ==========================================================================

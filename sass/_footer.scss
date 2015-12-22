@@ -54,6 +54,10 @@ div#tab {
 	border: 2px solid #fff;
 }
 
+.form-group {
+	margin-bottom: 14px;
+}
+
 @mixin placeholder {
 	::-webkit-input-placeholder {@content}
   	:-moz-placeholder           {@content}
@@ -78,11 +82,10 @@ div#tab {
 	@include border-radius(5px);
 	font-family: $font-paragraph;
 	text-transform: uppercase;
-}
-
-.btn:hover {
-	background-color: #fff;
-	color: $brand-orange;
+	&:hover {
+		background-color: #fff;
+		color: $brand-orange;
+	}
 }
 
 /*follow*/
@@ -91,17 +94,16 @@ p.social {
 	font-family: $font-social;
 	border: 3px solid #fff;
 	@include border-radius(10px);
-	font-size: 47px;
+	font-size: 46.5px;
 	display: inline-block;
 	margin: 5px 5px 0 0;
 	padding: 10px 5px;
 	background-color: #fff;
 	color: $brand-orange;
-}
-
-p.social:hover {
-	background-color: $brand-orange;
-	color: #fff;
+	&:hover {
+		background-color: $brand-orange;
+		color: #fff;
+	}
 }
 
 /*map*/
